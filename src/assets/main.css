@@ -1,0 +1,56 @@
+@import './base.css';
+@import "./css/common.css";
+@import "./scss/common.css";
+
+#app {
+    width: 100%;
+}
+
+@media (max-width: 960px) {
+    .split-line, .sketch, .baseInfo, .intro, .skill{
+        width: 90% !important;
+    }
+    .pic{
+        width: 100px !important;
+    }
+    .skill{
+        align-items: center !important;
+    }
+    .skill, .baseInfo{
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    .intro{
+        margin-top: 20px !important;
+    }
+    .picture{
+        width: 100% !important;
+    }
+    .picture img{
+        width: 100px !important;
+    }
+    .skillList{
+        width: 410px !important;
+        margin-bottom: 30px;
+    }
+    .skillList .info{
+        height: 130px !important;
+    }
+    #ContactInformation .contact{
+        gap: 0;
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 660px) {
+    #ContactInformation .contact{
+        flex-direction: column;
+    }
+    .baseInfo{
+        align-items: flex-start !important;
+    }
+}
+
+@media (max-width: 470px) {
+}

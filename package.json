@@ -1,0 +1,31 @@
+{
+  "name": "aa",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "devNocache": "vite --force",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf build/* && rm -rf node_modules/.cache"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-regular-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.5",
+    "axios": "^1.6.5",
+    "crypto-js": "^4.2.0",
+    "element-plus": "^2.4.4",
+    "fingerprintjs2": "^2.1.4",
+    "vue": "^3.3.11",
+    "vue-fullpage.js": "^0.2.15",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.10"
+  }
+}

@@ -1,0 +1,79 @@
+$distance-direction: 'top', 'left', 'right', 'bottom';
+@for $i from 1 through 20 {
+    $value: ($i - 1) * 5;
+    @each $val in $distance-direction {
+        .m-#{$val}-#{$value} {
+            margin-#{$val}: #{$value}px;
+        }
+        .p-#{$val}-#{$value} {
+            padding-#{$val}: #{$value}px;
+        }
+    }
+}
+@for $i from 1 through 4 {
+    $value: $i * 25;
+    .border-radius-#{$value} {
+        border-radius: $value * 1%;
+    }
+}
+@for $i from 1 through 20 {
+    $value: $i * 5;
+   .w-#{$value} {
+        width: $value * 1%;
+    }
+    .max-w-#{$value} {
+        max-width: $value * 1%;
+    }
+    .min-w-#{$value} {
+        min-width: $value * 1%;
+    }
+   .h-#{$value} {
+        height: $value * 1%;
+    }
+    .max-h-#{$value} {
+        max-height: $value * 1%;
+    }
+    .min-h-#{$value} {
+        min-height: $value * 1%;
+    }
+
+}
+$alignItems: (
+        c: center,
+        s: flex-start,
+        e: flex-end
+);
+@each $k, $v in $alignItems {
+    .align-items-#{$k} {
+        align-items: $v;
+    }
+}
+$justifyContent: (
+        c: center,
+        s: flex-start,
+        e: flex-end,
+        b: space-between
+);
+@each $k, $v in $justifyContent {
+    .justify-content-#{$k} {
+        justify-content: $v;
+    }
+}
+
+@for $i from 1 through 10 {
+    $size: 10 + $i * 2;
+   .font-size-#{$size} {
+        font-size: #{$size}px;
+    }
+}
+
+@for $i from 1 through 10 {
+    $width: $i * 2;
+   .flex-gap-#{$width} {
+       gap: #{$width}px;
+    }
+    .flex-gap-per-#{$width}{
+        gap: $width * 1%;
+    }
+}
+

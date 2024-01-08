@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'shark';
+    src: url("../font/shark.ttf") format("truetype");
+}
+*{
+    font-family: shark, sans-serif;
+    flex-wrap: wrap;
+}
+div, span{
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+.flex-direction-c{
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.h-auto{
+    height: auto;
+}
+
+.text-wrap{
+    word-break: break-all;
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+.list-style-decimal{
+    list-style: decimal;
+}
+.title{
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+}
+
+.skillList{
+    gap: 20px 0;
+}
+
+.pic img{
+    max-width: 160px;
+    max-height: 160px;
+}
